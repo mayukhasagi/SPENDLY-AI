@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-surface: #010e24;
+  --color-surface-container-low: #02132b;
+  --color-surface-container-high: #0b203d;
+  --color-surface-container-highest: #102645;
+  --color-on-surface: #dbe6ff;
+  --color-on-surface-variant: #9eabc8;
+  
+  --color-primary: #58f5d1;
+  --color-primary-container: #1cd0ad;
+  --color-on-primary: #005949;
+  --color-on-primary-container: #003f33;
+  
+  --color-secondary: #c4d4fb;
+  --color-secondary-container: #374767;
+  --color-on-secondary: #394969;
+  
+  --color-tertiary: #6cd6ff;
+  --color-tertiary-container: #01cbff;
+  --color-on-tertiary: #00485d;
+
+  --color-error: #ff716c;
+  --color-error-dim: #d7383b;
+  
+  --color-outline: #687690;
+  --color-outline-variant: #3b4861;
+
+  --radius-md: 1.5rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-surface-container-high/40 backdrop-blur-xl border border-white/5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
