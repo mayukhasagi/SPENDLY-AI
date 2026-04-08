@@ -1,26 +1,23 @@
 # SPENDLY-AI
 
-Current non-model project stage for deterministic preprocessing, anomaly tagging, and user segmentation prep.
+AI-powered expense analysis and forecasting system that converts aggregated credit card transaction data into synthetic user time series.
 
 ## Project Structure
 
-- `src/preprocess.yetpy`: main preprocessing script
-- `dashboard/app.py`: basic dashboard placeholder
-- `data/raw/`: input data
+- `src/preprocess.py`: preprocessing pipeline
+- `src/patterns.py`: anomaly detection and clustering
+- `src/forecast.py`: LSTM forecasting engine
+- `dashboard/app.py`: dashboard placeholder app
+- `data/raw/`: input datasets
 - `data/processed/`: generated `train.csv`, `val.csv`, `test.csv`
-- `outputs/`: generated `anomaly_df.csv`, `cluster_labels.csv`
-- `notebooks/figures/`: EDA figure directory
+- `outputs/`: generated anomaly, clustering, metrics, and forecast artifacts
+- `notebooks/01_EDA.ipynb`: EDA notebook
+- `notebooks/figures/`: saved EDA visualizations
 
-## What Gets Generated
-
-- `data/processed/train.csv`
-- `data/processed/val.csv`
-- `data/processed/test.csv`
-- `outputs/anomaly_df.csv`
-- `outputs/cluster_labels.csv`
-
-## Run
+## Quick Start
 
 ```bash
-py -3 src/preprocess.yetpy --input "data/raw/Credit card transactions - India - Simple.csv"
+py -3 src/preprocess.py
+py -3 src/patterns.py
+py -3 src/forecast.py
 ```
