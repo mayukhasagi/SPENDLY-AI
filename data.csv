@@ -1,0 +1,7 @@
+gender,card_type,city,date,exp_type,amount_raw
+F,Silver,Mumbai,2023-01-01,Food,150
+F,Silver,Mumbai,2023-01-03,Travel,200
+F,Silver,Mumbai,2023-01-05,Food,100
+M,Gold,Delhi,2023-01-02,Electronics,1200
+M,Gold,Delhi,2023-01-04,Travel,50
+M,Gold,Delhi,2023-01-04,Food,30

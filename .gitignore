@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.DS_Store
+Thumbs.db
+outputs/df_daily.csv
+outputs/df_category.csv
